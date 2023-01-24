@@ -1,7 +1,6 @@
-package com.example.mapper;
+package com.example.insta_clone.mapper;
 
-import com.example.model.User;
-import org.apache.ibatis.annotations.Insert;
+import com.example.insta_clone.model.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -16,7 +15,4 @@ public interface UserMapper {
 
     @Select("SELECT * FROM user")
     List<User> getUserList();
-
-    //@Insert("INSERT INTO user VALUES()")
-    //int insertUser()
 }
